@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+  body {
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  /* make full page background image */
+  .background-image {
+    position: relative;                   /* positioned according to parent and previous sibling */
+    height: 100%;                         /* element dimensions */
+    width: 100%;
+  }
+  .background-image::after {
+    content: "";
+    background-image: url("../images/Orange-Background-Wallpaper-HD-16464.png");
+    background-repeat: repeat;
+    position: absolute;                   /* position without taking parent or sibling position into account */
+    top: 0px;                             /* when absolute, 0px is the top-left pixel of the page */
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    opacity: .3;
+    background-size: 42px;                /* size of the background image */
+    z-index: -1;                           /* put it behind the other stuff on the page */
+    /* background-color: rgb(35, 64, 192);   */
+  }
+  
+/* style header */
+header {
+  padding: 20px 35px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  top: 0;
+  background-color: rgba(214, 167, 96, 0.7);
+
+}
+header h1 {
+  font-weight: bold;
+  font-size: 46px;
+  margin: 0;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  /* background-color: rgb(248, 233, 147); */
+}
+ header a {
+  text-decoration: none;
+  color: #000;
+}
+/* move nav inline and left */
+header nav {
+  margin: 7px 0;
+}
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+header nav ul li a {
+  padding: 10px 15px;
+  font-weight: lighter;
+  font-size: 36px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+/* style hero */
+.hero {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.profile-pic {
+  width: 55%;
+}
+.profile-pic img {
+  margin: 30px;
+  height: 400px;
+}
+/* .hero-quote {
+  display: flex;
+  justify-content: flex-end;
+} */
+.quote {
+  width: 40%;
+  font-size: 28px;
+  font-style: italic;
+  margin: 30px;
+  text-align: end;
+}
+.about-me {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px;
+  width: 90%;
+  /* border-top: #000 solid 1px; */
+  margin: 0 auto 35px auto;
+}
+.section-title {
+  font-weight: bold;
+  font-size: 48px;
+  text-align: left;
+  width: 22%;
+}
+.brand-statement {
+  width: 65%;
+  padding: 15px;
+  border-left: darkgoldenrod solid 3px;
+}
+.brand-statement p {
+  font-size: 26px;
+  font-weight: lighter;
+  text-align: left;
+}
+.my-work {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto 35px auto;
+  padding: 20px;
+  flex-wrap: wrap;
+  /* align-items: center; */
+}
+.screenshot-grid {
+  width: 65%;
+  font-size: 18px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 10px;
+  align-items: center;
+}
+.screenshot img {
+  width: 200px;
+  max-height: 250px;
+  display: flex;
+  padding: 15px; 
+  /* justify-content: center; */
+}
+.project-1 {
+  grid-row: 1 / span 2;
+}
