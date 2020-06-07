@@ -2,33 +2,44 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  }
-  body {
-    color: #000;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  /* make full page background image */
-  .background-image {
-    position: relative;                   /* positioned according to parent and previous sibling */
-    height: 100%;                         /* element dimensions */
-    width: 100%;
-  }
-  .background-image::after {
-    content: "";
-    background-image: url("../images/Orange-Background-Wallpaper-HD-16464.png");
-    background-repeat: repeat;
-    position: absolute;                   /* position without taking parent or sibling position into account */
-    top: 0px;                             /* when absolute, 0px is the top-left pixel of the page */
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    opacity: .3;
-    background-size: 42px;                /* size of the background image */
-    z-index: -1;                           /* put it behind the other stuff on the page */
-    /* background-color: rgb(35, 64, 192);   */
-  }
-  
+}
+
+body {
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* make full page background image */
+
+.background-image {
+  position: relative;
+  /* positioned according to parent and previous sibling */
+  height: 100%;
+  /* element dimensions */
+  width: 100%;
+}
+
+.background-image::after {
+  content: "";
+  background-image: url("../images/Orange-Background-Wallpaper-HD-16464.png");
+  background-repeat: repeat;
+  position: absolute;
+  /* position without taking parent or sibling position into account */
+  top: 0px;
+  /* when absolute, 0px is the top-left pixel of the page */
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  opacity: .3;
+  background-size: 42px;
+  /* size of the background image */
+  z-index: -1;
+  /* put it behind the other stuff on the page */
+  /* background-color: rgb(35, 64, 192);   */
+}
+
 /* style header */
+
 header {
   padding: 20px 35px;
   display: flex;
@@ -36,23 +47,26 @@ header {
   flex-wrap: wrap;
   top: 0;
   background-color: rgba(214, 167, 96, 0.7);
-
 }
+
 header h1 {
   font-weight: bold;
   font-size: 46px;
   margin: 0;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  /* background-color: rgb(248, 233, 147); */
 }
- header a {
+
+header a {
   text-decoration: none;
   color: #000;
 }
+
 /* move nav inline and left */
+
 header nav {
   margin: 7px 0;
 }
+
 header nav ul {
   display: flex;
   flex-wrap: wrap;
@@ -60,30 +74,32 @@ header nav ul {
   align-items: center;
   list-style: none;
 }
+
 header nav ul li a {
   padding: 10px 15px;
   font-weight: lighter;
   font-size: 36px;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-/* style hero */
+
+/* style hero picture and quote */
+
 .hero {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
   align-items: center;
 }
+
 .profile-pic {
   width: 55%;
 }
+
 .profile-pic img {
   margin: 30px;
   height: 400px;
 }
-/* .hero-quote {
-  display: flex;
-  justify-content: flex-end;
-} */
+
 .quote {
   width: 40%;
   font-size: 28px;
@@ -91,6 +107,7 @@ header nav ul li a {
   margin: 30px;
   text-align: end;
 }
+/* "brand statement" */
 .about-me {
   display: flex;
   justify-content: space-around;
@@ -98,27 +115,30 @@ header nav ul li a {
   align-items: center;
   padding: 20px;
   width: 90%;
-  /* border-top: #000 solid 1px; */
   margin: 0 auto 35px auto;
 }
+
 .section-title {
   font-weight: bold;
   font-size: 48px;
   text-align: left;
   width: 22%;
 }
+
 .brand-statement {
   width: 65%;
   padding: 15px;
   border-left: darkgoldenrod solid 3px;
 }
+
 .brand-statement p {
   font-size: 26px;
   font-weight: lighter;
   text-align: left;
 }
+/* project screenshot section */
 .my-work {
-  width: 90%;  
+  width: 90%;
   display: flex;
   justify-content: space-around;
   margin: 0 auto 35px auto;
@@ -126,56 +146,79 @@ header nav ul li a {
   flex-wrap: wrap;
   align-items: center;
 }
-/* .screenshot-grid {
-  width: 65%;
-  font-size: 18px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-gap: 10px;
-  border: 1px blue solid;
-}
-.project-img {
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover;
-}
-.project-1 {
-  grid-row: 1 / span 1;
-  grid-column: 1 / span 2;
-}
-.project-2 {
-  grid-row: 2 / span 1;
-}
-.project-3 {
-  grid-row: 2 / span 1;
-} */
-.flex-list {
+
+.flex-container {
   display: flex;
   flex-wrap: wrap;
+  padding: 15px;
+  justify-content: space-between;
   width: 65%;
-  border-left: solid 3px darkgoldenrod;
-  position: relative;
-  text-align: center;
-  color: #000;
-  font-size: 10px;
+  border-left: darkgoldenrod solid 3px;
 }
-.flex-list li {
-  height: 40vh;
-  margin: 15px;
-  list-style: none;
-}
-.flex-list img {
-  max-height: 100%;
+
+.project-img img {
   min-width: 100%;
+  height: 40vh;
   object-fit: cover;
-  vertical-align: bottom;
-  border: solid 3px darkgoldenrod;
+  padding: 15px;
 }
-.image-text-1 {
-  position: absolute;
-  bottom: 4px;
-  left: 8px;
+
+.flex-item1 {
+  flex-grow: 2;
+}
+/* reach out section */
+.contact-me {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto 35px auto;
+  padding: 20px;
+  flex-wrap: nowrap;
+  width: 90%;
+}
+
+.contact-container {
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  width: 65%;
+  padding: 0 25px 0 25px;
+  font-size: 18px;
+  color: #000;
+  align-items: center;
+  border-left: darkgoldenrod solid 3px;
 
 }
+
+.contact-container img {
+  min-width: 40%;
+  height: 5vh;
+  object-fit: cover;
+}
+
+.flex-item-1 a {
+  text-decoration: none;
+  color: #000;
+}
+footer {
+  padding: 40px 35px;
+  background-color: rgba(214, 167, 96, 0.7);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+footer h3 {
+  color: #000;
+  font-size: 30px;
+  margin: 0;
+}
+
+footer div {
+  line-height: 1.5;
+  text-align: right;
+}
+
+
+/* footer style end */
