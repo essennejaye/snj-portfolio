@@ -114,7 +114,7 @@ header nav ul li a:hover {
 
 .quote {
   width: 40%;
-  font-size: 28px;
+  font-size: 26px;
   font-style: italic;
   margin: 30px;
   text-align: end;
@@ -216,7 +216,7 @@ header nav ul li a:hover {
   align-items: center;
   margin: 0 auto 35px auto;
   padding: 20px;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   width: 90%;
 }
 
@@ -230,6 +230,7 @@ header nav ul li a:hover {
   color: var(--secondary-color);
   align-items: center;
   border-left: darkgoldenrod solid 3px;
+  flex-wrap: wrap;
 }
 
 .contact-container img {
@@ -259,9 +260,9 @@ footer {
   align-items: center;
 }
 
-footer h3 {
+footer h4 {
   color: var(--secondary-color);
-  font-size: 35px;
+  font-size: 20px;
   margin: 0;
   font-weight: lighter;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -269,4 +270,67 @@ footer h3 {
 
 footer div {
   text-align: right;
+}
+/* mobile device optimization */
+@media screen and (max-width: 980px) {
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+  }
+  header h1 {
+    width: 100%;
+    text-align: center;
+  }
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+  header nav ul li a {
+    font-size: 20px;
+  }
+  footer h4, footer div {
+    text-align: center;
+    width: 100%;
+  }
+  .profile-pic, .quote {
+    width: 100%;
+  }
+  .quote {
+    text-align: center;
+  }
+  .flex-container {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .profile-pic, .quote {
+    display: flex;
+    justify-content: center;
+  }
+  header { position: relative;}
+}
+@media screen and (max-width: 575px) {
+  .flex-container, .brand-statement, .contact-container {
+    border-left: none;
+  }
+  .section-title {
+    justify-content: center;
+    flex: 1 100%;
+    text-align: center;
+  }
+  .brand-statement {
+    padding: 0;
+    width: 100%;
+  }
+  .contact-container {
+    justify-content: center;
+    padding: 0;
+    width: 100%;
+  }
+  .flex-item.linkedin-link img, .flex-item.github-link img {
+    flex: 1 100%;
+  }
+
+
 }
