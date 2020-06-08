@@ -1,3 +1,7 @@
+:root {
+  --primary-color: var(darkgoldenrod);
+  --secondary-color: var(#000);
+}
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +9,7 @@
 }
 
 body {
-  color: #000;
+  color: var(--secondary-color);
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -61,7 +65,7 @@ header h1 {
 
 header a {
   text-decoration: none;
-  color: #000;
+  color: var(--secondary-color);
 }
 
 /* move nav inline and left */
@@ -86,8 +90,8 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-  background: darkgoldenrod;
-  color: #000;
+  background-color: darkgoldenrod;
+  color: var(--secondary-color);
   border-radius: 15px;
   text-shadow: none;
 }
@@ -142,7 +146,7 @@ header nav ul li a:hover {
 .brand-statement {
   width: 65%;
   padding: 15px;
-  border-left: darkgoldenrod solid 3px;
+  border-left: var(--primary-color) solid 3px;
 }
 
 .brand-statement p {
@@ -168,7 +172,7 @@ header nav ul li a:hover {
   padding: 15px;
   justify-content: space-between;
   width: 65%;
-  border-left: darkgoldenrod solid 3px;
+  border-left: var(--primary-color) solid 3px;
 }
 
 .project-img img {
@@ -182,7 +186,7 @@ header nav ul li a:hover {
 .project-img img:hover {
   padding: 0;
   opacity: 0.7;
-  border: solid 1px darkgoldenrod;
+  border: solid 1px var(--primary-color);
   box-shadow: 0 0 10px rgba(184, 134, 11, 0.8);
 }
 
@@ -208,9 +212,9 @@ header nav ul li a:hover {
   width: 65%;
   padding: 0 25px 0 25px;
   font-size: 18px;
-  color: #000;
+  color: var(--secondary-color);
   align-items: center;
-  border-left: darkgoldenrod solid 3px;
+  border-left: var(--primary-color) solid 3px;
 }
 
 .contact-container img {
@@ -226,7 +230,7 @@ header nav ul li a:hover {
 
 .e-mail a {
   text-decoration: none;
-  color: #000;
+  color: var(--secondary-color);
 }
 
 /* style footer */
@@ -241,7 +245,7 @@ footer {
 }
 
 footer h3 {
-  color: #000;
+  color: var(--secondary-color);
   font-size: 35px;
   margin: 0;
   font-weight: lighter;
