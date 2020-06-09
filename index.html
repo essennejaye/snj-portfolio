@@ -9,8 +9,9 @@
     <title>SNJ Portfolio</title>
 </head>
 
+<!-- to add a full page background-->
 <body class="background-image">
-
+    <!-- header and navigation -->
     <header>
         <h1>
             <a href="#">Satalia N. Jefferson</a>
@@ -29,6 +30,7 @@
             </ul>
         </nav>
     </header>
+    <!-- profile picture and inspiring quote -->
     <section class="hero">
         <div class="profile-pic">
             <img src="./assets/images/20200505_134131 (2).jpg" alt="picture of me" />
@@ -42,12 +44,13 @@
             </p>
         </div>
     </section>
-    <section class="about-me">
+    <!-- bio section -->
+    <section class="section-container" id="about-me">
         <h2 class="section-title">About<br> Me</h2>
-        <div class="brand-statement">
+        <div class="about-container">
             <p> I am an always evolving web developer with a background in healthcare that allows me to combine critical
-                thinking skills,
-                effective team communication, attention to detail and an ability to remain calm under pressure.
+                thinking skills, effective team communication, attention to detail and an ability to remain calm under
+                pressure.
                 Recently, I earned a Master of Science in Information Systems from Dakota State University and a
                 certificate for full stack development from the University of Arizona.
                 I am excited about the opportunity to venture outside of the usual expectations to help craft memorable,
@@ -55,63 +58,58 @@
             </p>
         </div>
     </section>
-    <section class="my-work">
+    <!-- project screenshots with name and tech implemented -->
+    <section class="section-container" id="my-work">
         <h2 class="section-title">My<br>Work</h2>
-
-        <ul class="flex-list">
-            <li>
-                <a href="https://essennejaye.github.io/run-buddy/"><img src="./assets/images/run_buddy.png"
-                    alt="run buddy screenshot" class="project-img"></a>
-                <p class="image-text-1">
-                    HTML, CSS   Run Buddy -  fitness app
-                </p>
-            </li>
-            <li>
-                <a href="https://essennejaye.github.io/horiseon-code-refactor/"><img
-                    src="./assets/images/horiseon_screen_capture.png" alt="horiseon screenshot"
-                    class="project-img"></a>
-                    <p class="image-text-2">
-                        HTML, CSS   Horiseon - marketing webpage
-                    </p>
-    
-            </li>
-            <li>
-                <a href="#"><img src="./assets/images/fangirl_EWF.png" alt="EW&F fangirl screenshot"
-                    class="project-img"></a>
-            </li>
-        </ul>
-
-        <!-- <div class="screenshot-grid">
-            <div class="screenshot project-1">
-                <a href="https://essennejaye.github.io/run-buddy/"><img src="./assets/images/run_buddy.png"
-                        alt="run buddy screenshot" class="project-img"></a>
+        <div class="project-container">
+            <div id="image-1" class="project-img">
+                <a href="https://essennejaye.github.io/run-buddy/" target="_blank"><img src="./assets/images/run_buddy.png"
+                        alt="run buddy screenshot"></a>
+                <div class="text-block">
+                    <h4>Run Buddy</h4>
+                    <p>HTML, CSS</p>
+                </div>
             </div>
-            <div class="screenshot project-2">
-                <a href="https://essennejaye.github.io/horiseon-code-refactor/"><img
-                        src="./assets/images/horiseon_screen_capture.png" alt="horiseon screenshot"
-                        class="project-img"></a>
+            <div class="project-img">
+                <a href="https://essennejaye.github.io/horiseon-code-refactor/" target="_blank"><img
+                        src="./assets/images/horiseon_screen_capture.png" alt="horiseon screenshot"></a>
+                <div class="text-block">
+                    <h4>Horiseon</h4>
+                    <p>HTML, CSS</p>
+                </div>
             </div>
-            <div class="screenshot project-3">
-                <a href="#"><img src="./assets/images/fangirl_EWF.png" alt="EW&F fangirl screenshot"
-                        class="project-img"></a>
+            <div class="project-img">
+                <a href="#" target="_blank"><img src="./assets/images/fangirl_EWF.png" alt="EW&F fangirl screenshot"></a>
+                <div class="text-block">
+                    <h4>Fangirl Tribute</h4>
+                    <p>HTML</p>
+                </div>
             </div>
-        </div>-->
-
-    </section> 
-
-    <section class="contact-me">
-        <h2 class="section-title">Contact Me</h2>
-        </div>
-        <div class="contact-info"></div>
-        <p>
-            Email: <a href="mailto:sjeffers02@gmail.com">sjeffers02@gmail.com</a>
-            <a href="http://www.linkedin.com/in/satalia-n-jefferson-87037a114"><img
-                    src="./assets/images/linkedin-icon.png" alt="linkedin icon" /></a>
-            <a href="https://github.com/essennejaye"><img src="./assets/images/GitHub_Logo_White.png"
-                    alt="github logo" /></a>
-        </p>
         </div>
     </section>
+    <!-- contact info and links to linkedin and github -->
+    <section class="section-container" id="contact-me">
+        <h2 class="section-title">Contact<br> Me</h2>
+        <div class="contact-container">
+            <div class="flex-item e-mail">
+                <a href="mailto:sjeffers02@gmail.com/" target="_blank">E: sjeffers02@gmail.com</a>
+            </div>
+            <div class="flex-item phone-number">
+                <p>
+                    P: 443-985-6501
+                </p>
+            </div>
+            <div class="flex-item linkedin-link">
+                <a href="http://www.linkedin.com/in/satalia-n-jefferson-87037a114/" target="_blank"><img
+                        src="./assets/images/linkedin-5-512.png" alt="linkedin icon" /></a>
+            </div>
+            <div class="flex-item github-link">
+                <a href="https://github.com/essennejaye/" target="_blank"><img src="./assets/images/iconfinder_github_287725.png"
+                        alt="github logo" /></a>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
     <footer>
         <h4>
             Made by Satalia Jefferson
