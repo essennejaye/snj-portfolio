@@ -3,6 +3,7 @@
 ## Introduction
 
 > This page presents the repository and published sites for the web development projects of Satalia Jefferson.
+  Currently the languages showcased are HTML5 and CSS3.
 
 ## Code Samples
 
@@ -30,10 +31,32 @@
             </div>
         </div>
     </section>
-   
+>CSS code for media query
+
+          @media screen and (max-width: 768px) {
+            header {
+              position: relative;
+            }
+            .profile-pic,
+            .quote {
+              display: flex;
+              justify-content: center;
+            }
+            .contact-container {
+              height: 150px;
+            }
+            .contact-container img {
+              height: 3vh;
+              object-fit: contain;
+              width: 100%;
+            }
+            .e-mail,
+            .phone-number {
+              font-size: 22px;
+            }
+          }
  
 ## Screenshots
-![](assets\images\portfolio_screenshot(1).png)
-![](assets\images\protfolio_screenshot(2).png)
-![](assets\images\protfolio_screenshot(3).png)
-o
+![](/assets/images/portfolio_screenshot(1).png)
+![](/assets/images/protfolio_screenshot(2).png)
+![](/assets/images/protfolio_screenshot(3).png)
