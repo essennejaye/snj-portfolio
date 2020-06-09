@@ -110,7 +110,7 @@ footer div {
   font-size: 26px;
   font-style: italic;
   margin: 30px;
-  text-align: end;
+  text-align: start;
 }
 /* hero section end */
 /* about, work, and contact sections styles */
