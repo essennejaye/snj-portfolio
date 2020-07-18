@@ -167,14 +167,22 @@ footer div {
   border-radius: 12px;
   box-shadow: 0 0 10px var(--primary-shadow-color);
 }
-#image-1 {
+#image-3 {
+  order: 1;
   flex-grow: 2;
 }
+#image-1 {
+  order: 2;
+}
+#image-2 {
+  order: 3;
+}
+
 /* text box for project images */
 .text-block {
   position: absolute;
-  bottom: 100px;
-  left: 10px;
+  bottom: 38px;
+  right: 20px;
   background-color: var(--primary-shadow-color);
   color: var(--secondary-color);
   padding: 5px 15px;
