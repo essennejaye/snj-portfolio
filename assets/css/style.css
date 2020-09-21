@@ -169,10 +169,10 @@ footer div {
 }
 #image-3 {
   order: 2;
-  flex-grow: 2;
 }
 #image-1 {
   order: 1;
+  flex-grow: 2;
 }
 #image-2 {
   order: 3;
